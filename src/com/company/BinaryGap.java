@@ -16,7 +16,7 @@ public class BinaryGap {
                 for(int j = i+1; j < binary.length(); j++) {
                     if(binary.charAt(j) == '1') {
                         if(j-i > maxDistance) {
-                            maxDistance = j-1;
+                            maxDistance = j-i;
                         }
                         currentIndex = j;
                         break;
